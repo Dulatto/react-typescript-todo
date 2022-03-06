@@ -19,6 +19,7 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
         }} />
         <button className='btn btn-sm btn-secondary'
         type="submit"
+        disabled={text === ''}
         onClick={(e) => {
             e.preventDefault();
             addTodo(text);
